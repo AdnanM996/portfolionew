@@ -13,13 +13,14 @@
 }
 
 html, body {
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 
 body {
     background-color: $color-primary;
     color: $color-terheary;
+    position: relative;
 }
 
 .wrapper {
@@ -29,24 +30,22 @@ body {
     max-width: 1600px;
 
     @media only screen and (min-width: $media-small) {
-        width: 95%;
-        background-color: chocolate;
+        width: 90%;
     }
 
     @media only screen and (min-width: $media-medium) {
-        width: 95%;
-        background-color: lawngreen;
+        width: 90%;
     }
 
     @media only screen and (min-width: $media-large) {
-        width: 95%;
-        background-color: royalblue;
+        width: 90%;
     }
 }
 
 main {
     height: auto;
     width: 100%;
+    position: relative;
 }
 
 img {

@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@keyframes h1 {
+  0% {
+    opacity: 0;
+    transform: translateY(25%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0%); } }
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +24,13 @@
     box-sizing: border-box; }
 
 html, body {
-  height: auto;
+  height: 100%;
   width: 100%; }
 
 body {
   background-color: #f7f7f7;
-  color: #7a7a7a; }
+  color: #7a7a7a;
+  position: relative; }
 
 .wrapper {
   display: flex;
@@ -24,20 +39,18 @@ body {
   max-width: 1600px; }
   @media only screen and (min-width: 768px) {
     .wrapper {
-      width: 95%;
-      background-color: chocolate; } }
+      width: 90%; } }
   @media only screen and (min-width: 1024px) {
     .wrapper {
-      width: 95%;
-      background-color: lawngreen; } }
+      width: 90%; } }
   @media only screen and (min-width: 1366px) {
     .wrapper {
-      width: 95%;
-      background-color: royalblue; } }
+      width: 90%; } }
 
 main {
   height: auto;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 img {
   vertical-align: baseline; }
@@ -159,7 +172,8 @@ textarea {
     align-items: center; }
   .header__logo img {
     height: 3.5rem;
-    width: 3.5rem; }
+    width: 3.5rem;
+    animation: logo 1s; }
   .header__menu {
     height: 2.3rem;
     width: 3.5rem; }
@@ -188,8 +202,8 @@ textarea {
   .nav a {
     display: block;
     color: #7a7a7a;
-    font-size: 1.6rem;
-    font-weight: 300;
+    font-size: 1.9rem;
+    font-weight: 400;
     text-decoration: none;
     text-transform: capitalize;
     transition: all .3s ease-out; }
@@ -222,15 +236,27 @@ ul {
         grid-template-columns: repeat(2, 1fr); } }
 
 .hero {
-  height: 100%;
-  width: 100%;
-  padding: 10rem 0rem; }
+  height: 100vh;
+  width: 100%; }
   .hero .wrapper {
     height: 100%;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start; }
+    align-items: flex-start;
+    justify-content: center; }
+  .hero h1 {
+    font-size: 5.6rem;
+    font-weight: 300;
+    line-height: 150%;
+    text-transform: uppercase;
+    animation: h1 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    transform: translateY(25%);
+    opacity: 0; }
+    .hero h1:nth-child(2) {
+      animation-delay: 1s;
+      margin-bottom: 2.5rem; }
 
 .skills {
   padding: 10rem 0rem; }
