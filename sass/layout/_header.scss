@@ -14,6 +14,9 @@
     &__menu {
         height: 2.3rem;
         width: 3.5rem;
+        @media only screen and (min-width: $media-small) {
+            display: none;
+        }
 
         &--line {
             height: .2rem;

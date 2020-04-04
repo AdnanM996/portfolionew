@@ -26,6 +26,21 @@ body {
     display: flex;
     width: 90%;
     margin: 0 auto;
+
+    @media only screen and (min-width: $media-small) {
+        width: 700px;
+        background-color: chocolate;
+    }
+
+    @media only screen and (min-width: $media-medium) {
+        width: 960px;
+        background-color: lawngreen;
+    }
+
+    @media only screen and (min-width: $media-large) {
+        width: 95%;
+        background-color: royalblue;
+    }
 }
 
 main {

@@ -20,6 +20,10 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 5rem;
 
+        @media only screen and (min-width: $media-small) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
 
         & ul {
             &:not(:last-child) {

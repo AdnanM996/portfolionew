@@ -7,5 +7,9 @@
         width: 80%;
         margin: 0 auto;
         gap: 7.5rem;
+
+        @media only screen and (min-width: $media-small) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
