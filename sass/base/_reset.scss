@@ -26,14 +26,15 @@ body {
     display: flex;
     width: 90%;
     margin: 0 auto;
+    max-width: 1600px;
 
     @media only screen and (min-width: $media-small) {
-        width: 700px;
+        width: 95%;
         background-color: chocolate;
     }
 
     @media only screen and (min-width: $media-medium) {
-        width: 960px;
+        width: 95%;
         background-color: lawngreen;
     }
 
