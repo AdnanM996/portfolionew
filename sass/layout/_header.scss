@@ -1,0 +1,29 @@
+.header {
+    background-color: pink;
+    width: 100%;
+    padding: 1.6rem 0rem;
+    
+    & .wrapper {
+        @include center;
+    }
+
+    &__logo img {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    &__menu {
+        height: 2.3rem;
+        width: 3.5rem;
+
+        &--line {
+            height: .2rem;
+            width: 100%;
+            background-color: $color-secondary;
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

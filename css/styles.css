@@ -17,6 +17,11 @@ body {
   background-color: #f7f7f7;
   color: #7a7a7a; }
 
+.wrapper {
+  display: flex;
+  width: 90%;
+  margin: 0 auto; }
+
 html {
   font-size: 62.5%; }
 
@@ -28,3 +33,27 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #131313; }
+
+.header {
+  background-color: pink;
+  width: 100%;
+  padding: 1.6rem 0rem; }
+  .header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__logo img {
+    height: 3.5rem;
+    width: 3.5rem; }
+  .header__menu {
+    height: 2.3rem;
+    width: 3.5rem; }
+    .header__menu--line {
+      height: .2rem;
+      width: 100%;
+      background-color: #131313; }
+      .header__menu--line:not(:last-child) {
+        margin-bottom: 1rem; }
+
+.nav {
+  display: none; }
