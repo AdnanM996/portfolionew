@@ -1,0 +1,23 @@
+.grid {
+    display: grid;
+    width: 100%;
+    gap: 5rem;
+    margin-top: 7.5rem;
+}
+
+.work {
+    & .grid {
+        grid-template-columns: repeat(1, 1fr);
+
+        &__item {
+            overflow: hidden;
+            position: relative;
+
+            & img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

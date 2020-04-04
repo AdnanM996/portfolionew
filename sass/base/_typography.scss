@@ -14,3 +14,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: $color-secondary;
 }
+
+.about {
+    &--text {
+        color: $color-terheary;
+        font-size: 1.8rem;
+        line-height: 140%;
+        font-weight: 400;
+
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+    } 
+}

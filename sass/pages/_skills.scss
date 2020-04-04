@@ -1,0 +1,39 @@
+.skills {
+    padding: 10rem 0rem;
+
+    & .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    &__container {
+        margin-top: 7.5rem;
+        border-top: 1px solid $color-secondary;
+        width: 100%;
+        display: grid;
+        /*justify-content: space-between;
+        align-items: center;
+        flex-direction: column;*/
+        padding-top: 5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+
+
+        & ul {
+            &:not(:last-child) {
+                margin-bottom: 0rem;
+            }
+        }
+
+        & li {
+            font-size: 1.4rem;
+            text-transform: capitalize;
+            font-weight: 600;
+            &:not(:last-child) {
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}
