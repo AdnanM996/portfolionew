@@ -22,6 +22,11 @@ body {
   width: 90%;
   margin: 0 auto; }
 
+main {
+  height: auto;
+  width: 100%;
+  background-color: skyblue; }
+
 html {
   font-size: 62.5%; }
 
@@ -35,7 +40,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #131313; }
 
 .header {
-  background-color: pink;
   width: 100%;
   padding: 1.6rem 0rem; }
   .header .wrapper {
@@ -57,3 +61,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav {
   display: none; }
+
+.hero {
+  height: 100%;
+  width: 100%;
+  padding: 10rem 0rem;
+  background-color: orange; }
+  .hero .wrapper {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start; }
