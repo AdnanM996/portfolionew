@@ -25,6 +25,17 @@
                 object-fit: cover;
                 height: 100%;
                 width: 100%;
+                filter: grayscale(100%);
+                transition: all .3s ease-out;
+            }
+
+            &:hover img {
+                filter: grayscale(0%);
+            }
+
+            &:hover .cta {
+                bottom: 10%;
+                color: $color-white;
             }
         }
     }

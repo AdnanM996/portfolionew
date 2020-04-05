@@ -25,14 +25,62 @@
         text-transform: capitalize;
         transition: all .3s ease-out;
 
-        &:hover {
+       /* &:hover {
             color: $color-secondary;
-        }
+        }*/
     }
 }
 
 ul {
     list-style: none;
+}
+
+#home-link,
+#about-link,
+#work-link,
+#skills-link,
+#contact-link {
+    white-space: nowrap;
+    position: relative;
+    color: $color-terheary;
+}
+
+#home-link::after,
+#about-link::after,
+#work-link::after,
+#skills-link::after,
+#contact-link::after {
+    position: absolute;
+    left: 0%;
+    width: 0%;
+    overflow: hidden;
+    transition: all .3s ease;
+    color: $color-secondary;
+
+}
+
+#home-link:hover::after,
+#about-link:hover::after,
+#work-link:hover::after,
+#skills-link:hover::after,
+#contact-link:hover::after {
+    width: 100%;
+}
+
+#home-link::after {
+    content: 'Home';
+}
+#about-link::after {
+    content: 'About';
+}
+#work-link::after {
+    content: 'Work';
+}
+#skills-link::after {
+    content: 'Skills';
+}
+#contact-link::after {
+    content: 'Contact';
 }
 
 

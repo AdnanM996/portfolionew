@@ -1,6 +1,14 @@
 .header {
     width: 100%;
     padding: 1.6rem 0rem;
+
+    @media only screen and (min-width: $media-medium) {
+        padding: 2.5rem 0rem;
+    }
+
+    @media only screen and (min-width: $media-large) {
+        padding: 2.5rem 0rem;
+    }
     
     & .wrapper {
         @include center;
